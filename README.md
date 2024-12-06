@@ -1,2 +1,5 @@
-# proj5-osm-starter
- Constructs a graph-based representation of OpenStreetMap (OSM) datad, processing JSON-formatted OSM data to create vertices (nodes) representing places of interest and edges (connections) between them.
+# OpenStreetMap Graph Representation and Pathfinding Project Summary!
+
+This project is a C++ command-line tool for parsing and representing OpenStreetMap (OSM) data as a graph structure, enabling efficient navigation and pathfinding. The program reads JSON-formatted OSM data, including waypoints, footways, and buildings, and constructs a graph where vertices represent places of interest, and edges represent connections between them, such as walkways or roads. The tool ensures accurate real-world connectivity by calculating distances between geographic coordinates using the Haversine formula. Building nodes, which are not directly connected in OSM data, are linked to the nearest waypoints within a realistic proximity of 0.036 miles, creating a fully connected graph for navigation.
+
+This program supports large datasets, handling graphs with thousands of vertices and edges, and has been rigorously tested using the GoogleTest framework. The implementation is optimized for scalability and accuracy, making it ideal for tasks such as shortest pathfinding or geographic data analysis. This project demonstrates the power of combining graph theory and geographic data to solve real-world navigation challenges.
